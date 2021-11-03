@@ -39,7 +39,7 @@
           >
           <ul class="list menu-list">
             <li class="menu-item">
-              <a class="menu link" href="./index.html">Студия</a>
+              <a class="menu link current" href="./index.html">Студия</a>
             </li>
             <li class="menu-item">
               <a
@@ -82,7 +82,7 @@
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="feature-container">
@@ -152,6 +152,7 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="list work-container">
             <li class="img-work">
+              <div class="work-img-wrap">
               <img
                 src="./img/box1.jpg"
                 alt="Человек работает за пк с маленьким монитором с кодом"
@@ -159,8 +160,13 @@
                 height="294"
                 class="img-work"
               />
+              <p class="work-img-text">
+                доступные приложения
+              </p>
+              </div>
             </li>
             <li class="img-work">
+              <div class="work-img-wrap">
               <img
                 src="./img/box2.jpg"
                 alt="Человек работает над дизайном программы для телефона при этом держа телефон в руках"
@@ -168,8 +174,13 @@
                 height="294"
                 class="img-work"
               />
+              <p class="work-img-text">
+                мобильные приложения
+              </p>
+              </div>
             </li>
             <li class="img-work">
+              <div class="work-img-wrap">
               <img
                 src="./img/box3.jpg"
                 alt="Человек работает на планшете с цветовой палитрой"
@@ -177,6 +188,10 @@
                 height="294"
                 class="img-work"
               />
+              <p class="work-img-text">
+                дизайнерские решения
+              </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -464,5 +479,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./img/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

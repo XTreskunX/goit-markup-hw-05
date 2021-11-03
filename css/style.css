@@ -57,6 +57,17 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-nav-color);
+  position: relative;
+}
+.menu.current::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -32px;
+  display: block;
+  background-color: #2196f3;
 }
 .menu-list {
   display: flex;
@@ -70,6 +81,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-a-color);
+  fill: #757575;
 }
 .header-nav {
   display: flex;
@@ -234,6 +246,28 @@ img {
 }
 .work {
   padding-bottom: 95px;
+}
+.work-img-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.work-img-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  justify-content: center;
+}
+.img-work {
+  position: relative;
 }
 /*-----work-----*/
 /*-----main-----*/
@@ -516,9 +550,6 @@ img {
   margin-left: 30px;
 }
 .project:hover {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -534,5 +565,64 @@ img {
 .portfolio-container {
   margin-top: 30px;
 }
+.project-img-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  line-height: 1.5;
+  background: rgba(33, 150, 243, 0.9);
+  padding: 60px 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 500ms linear;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+.project-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.project:hover .project-img-text {
+  transform: translateY(0);
+}
 /*-----porfolio----*/
 /*----------body----------*/
+/*---------modal---------*/
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+.modal {
+  position: absolute;
+  width: 530px;
+  height: 580px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+/*---------modal---------*/
