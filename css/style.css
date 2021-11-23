@@ -27,7 +27,6 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
-
 p,
 h1,
 h2,
@@ -117,6 +116,7 @@ img {
 .header-contact:focus {
   color: var(--logo-color);
   fill: var(--logo-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 /*----------header---------*/
 /*-----hero-----*/
@@ -342,10 +342,12 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: #2196f3;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .social-link:hover,
 .social-link:focus .social-icon {
   fill: #ffffff;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .social-list {
   display: flex;
@@ -395,10 +397,12 @@ img {
 .clients-item:hover,
 .clients-item:focus {
   border-color: var(--logo-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--logo-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .clients-link {
   fill: #afb1b8;
@@ -455,10 +459,12 @@ img {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #2196f3;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .footer-social-link:hover,
 .footer-social-link:focus .footer-social-icon {
   fill: #ffffff;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .footer-social-list {
   display: flex;
@@ -522,6 +528,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .filter {
   padding: 6px 22px;
@@ -552,6 +559,7 @@ img {
 .project:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .img-description {
   border-bottom: 1px solid #eeeeee;
