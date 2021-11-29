@@ -338,16 +338,15 @@ img {
   align-items: center;
   justify-content: center;
   color: #757575;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .social-link:hover,
 .social-link:focus {
   background-color: #2196f3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .social-link:hover,
 .social-link:focus .social-icon {
   fill: #ffffff;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .social-list {
   display: flex;
